@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Lilian</title>
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />   
-<link rel="stylesheet" href="/public/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css file to style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Lillian</title>
 </head>
-<button class="confetti-button">Click me!</button>
+<body>
+    <button class="button">Lilly's Confetti</button>
+    <!-- Here link the script file which you downloaded from the above link -->
+    <script src="confetti.js"></script>
+    <!-- Our javascript code comes here -->
+</body>
+<script>
+    var button = (start, stop) => {
+            const start = () => {
+                setTimeout(function () {
+                    confetti.start()
+                }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+            };
+
+            // for stopping the confetti
+
+            const stop = () => {
+                setTimeout(function () {
+                    confetti.stop()
+                }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            };
+            // after this here we are calling both the function so it works
+            start();
+            stop();
+        }
+</script>
 </html>
