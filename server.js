@@ -20,12 +20,6 @@ app.route('/')
     res.sendFile(process.cwd() + '/views/index.html')
   });
 
-app.use(function (req, res, next) {
-  res.status(200)
-    .type('text')
-    .send('Not Found')
-});
-
 app.listen(connection, () => {
     console.log("Holy Crap! It Connected")
   })
