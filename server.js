@@ -20,10 +20,6 @@ app.route('/')
     res.sendFile(process.cwd() + '/views/index.html')
   });
 
-app.listen(connection, () => {
-    console.log("Holy Crap! It Connected")
-  })
-
 app.listen(process.env.PORT || 3000, () => {
     console.log("Shhhhh!!!! Spying on port " + process.env.PORT)
   })
