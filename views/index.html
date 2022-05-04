@@ -21,14 +21,14 @@
     const stop = () => {
         setTimeout(function (string2) {
             confetti.stop();
-        }, 5000);
-    };   
-    function started() {
-        var x = document.createElement(start());        
+        }, 1000);
+    };
+    started = () => {
+        var x = document.createElement(start());
         document.body.appendChild(x);
     }
-    function stopped() {
-        var x = document.createElement(stop());        
+    stopped = () => {
+        var x = document.createElement(stop());
         document.body.appendChild(x);
     }
 </script>
