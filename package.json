@@ -1,5 +1,5 @@
 {
-  "name": "Lillian-1",
+  "name": "lillian",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,8 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/rbill314/Lillian.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "love"
+  ],
+  "author": "Daddy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rbill314/Lillian/issues"

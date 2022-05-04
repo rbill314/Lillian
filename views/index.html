@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style.css">
     <title>Lillian</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
 </head>
 
 <body>
-    <p>Lilly's Confetti</p>
-    <script src="confetti.js"></script>    
-    <script src="server.js"></script>
+    <button class="button" onclick="started()" ondblclick="stopped()">Lilly's Confetti</button>
 </body>
+
 <script>
     const start = () => {
-        setTimeout(function () {
-            confetti.start()
-        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        setTimeout(function (string) {
+            confetti.start();
+        }, 1000);
     };
     const stop = () => {
-        setTimeout(function () {
-            confetti.stop()
-        }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-    };
-    start();
-    stop();
+        setTimeout(function (string2) {
+            confetti.stop();
+        }, 5000);
+    };   
+    function started() {
+        var x = document.createElement(start());        
+        document.body.appendChild(x);
+    }
+    function stopped() {
+        var x = document.createElement(stop());        
+        document.body.appendChild(x);
+    }
 </script>
+
+<script src="server.js"></script>
 <script src="../public/confetti.js"></script>
+
 </html>
